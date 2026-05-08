@@ -7,8 +7,8 @@ import { type User } from '../../generated/prisma/client.js';
 import { ParticipantRole, PolicyType, RoomStatus } from '../../generated/prisma/enums.js';
 import { type JoinParticipantRequestDto } from './dto/req/join-participant.request.dto.js';
 import { type JoinParticipantResponseDto } from './dto/res/join-participant.response.dto.js';
-import { type ParticipantsRepository } from './participants.repository.js';
-import { type AuthRepository } from '../auth/auth.repository.js';
+import { ParticipantsRepository } from './participants.repository.js';
+import { AuthRepository } from '../auth/auth.repository.js';
 
 const ROOM_PARTICIPANT_COOKIE_PREFIX = 'participant_uuid_';
 const UUID_PATTERN = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
